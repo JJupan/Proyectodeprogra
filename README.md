@@ -1,39 +1,27 @@
-# **Programa de Estadísticas para Datos Agrupados y No Agrupados**
+# **Programa de Estadísticas para Datos Agrupados y No Agrupados (Sin Librerías Externas)**
 
-Este es un proyecto desarrollado en Python que calcula estadísticas tanto para datos no agrupados (menos de 30 elementos) como para datos agrupados (30 o más elementos). El programa es capaz de calcular la media aritmética, moda, varianza, desviación estándar, entre otros indicadores, y adapta los cálculos dependiendo del tipo de datos que el usuario ingrese.
+Este es un proyecto desarrollado en Python que calcula estadísticas tanto para datos no agrupados (menos de 30 elementos) como para datos agrupados (30 o más elementos), sin hacer uso de librerías externas como `math` o `statistics`. Todos los cálculos, como la media aritmética, moda, varianza y desviación estándar, se realizan manualmente dentro del código.
 
 ![Screenshot del programa en ejecución](docs/screenshot.png)
 
 ## **Instalación**
 
-Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
+Para ejecutar este programa en tu máquina local, sigue estos pasos:
 
-1. Clona este repositorio a tu máquina local utilizando el siguiente comando:
+1. Descarga el archivo `proyecto.py` desde el repositorio de GitHub. Haz clic en el botón "Code" y selecciona "Download ZIP". 
 
-    ```bash
-    git clone "URL del repositorio"
-    ```
+2. Extrae el archivo ZIP descargado en tu computadora.
 
-2. Navega al directorio del proyecto:
+3. Abre la terminal o consola de comandos en la carpeta donde se encuentra el archivo `proyecto.py`.
 
-    ```bash
-    cd "nombre del directorio"
-    ```
+4. Asegúrate de tener Python instalado en tu computadora. Si no lo tienes, descárgalo desde [python.org](https://www.python.org/downloads/).
 
-3. Instala Python si no lo tienes instalado. Puedes descargar la última versión de [python.org](https://www.python.org/downloads/).
-
-4. Asegúrate de que tienes las bibliotecas necesarias instaladas (aunque todas forman parte del paquete estándar de Python). Si es necesario, ejecuta:
+5. Ejecuta el programa desde la terminal con el siguiente comando:
 
     ```bash
-    pip install math
-    pip install statistics
+    python proyecto_estadistica.py
     ```
 
-5. Ejecuta el programa desde la terminal:
-
-    ```bash
-    python proyecto.py
-    ```
 
 ## **Estructura del Proyecto**
 
@@ -42,13 +30,13 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 ## **Descripción del Programa**
 
-El programa solicita al usuario ingresar el número de elementos que tiene su muestra, y de acuerdo a ese número, realiza los cálculos correspondientes para datos agrupados o no agrupados.
+El programa solicita al usuario ingresar el número de elementos que tiene su muestra, y de acuerdo a ese número, realiza los cálculos correspondientes para datos agrupados o no agrupados. Todos los cálculos se realizan sin el uso de librerías externas.
 
 - Para **datos no agrupados**:
-  - Calcula media aritmética, dato mayor, dato menor, moda, varianza y desviación estándar.
+  - Calcula manualmente la media aritmética, el dato mayor, el dato menor, la moda, la varianza y la desviación estándar.
   
 - Para **datos agrupados**:
-  - Genera la tabla de frecuencias y calcula la media aritmética, moda, varianza y desviación estándar.
+  - Genera la tabla de frecuencias y calcula manualmente la media aritmética, la moda, la varianza y la desviación estándar.
 
 ## **Ejemplo de Ejecución**
 
@@ -61,6 +49,6 @@ Datos no agrupados:
 Media aritmética: 13.2
 Dato mayor: 23
 Dato menor: 4
-Moda(s): [4]
+Moda(s): [4] con frecuencia: 2
 Varianza: 41.36
 Desviación estándar: 6.43
